@@ -3,11 +3,6 @@
     font-family: 'Cascadia Mono', monospace !important;
 }
 
-/* Side bar */
-.part.sidebar {
-    box-shadow: 20px 50px rgba(12, 12, 12, 0.25);
-}
-
 .codicon-toolbar-more, .codicon-word-wrap {
     display: block !important;
 }
@@ -50,7 +45,7 @@
 
 /* Sidebar title */
 .composite.title {
-    margin: -10px 0px 4px 10px;
+    margin: -2px 0px 2px 10px;
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
@@ -124,7 +119,7 @@
 /* Tabbar */
 .tabs {
   font-family: 'Cascadia Mono', monospace !important;
-  margin: -10px 0px 14px 20px;
+  margin: -2.34px 0px 14px 20px;
 }
 
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab {
