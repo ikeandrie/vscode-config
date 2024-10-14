@@ -1,3 +1,7 @@
+:root {
+  --tab-border-bottom-color: #fff;
+}
+
 /* Code comment style */
 .mtk3 {
     font-family: 'Cascadia Mono', monospace !important;
@@ -124,7 +128,6 @@
 .tabs {
   font-family: 'Cascadia Mono', monospace !important;
   margin: -10px 0px 14px 20px;
-  /* height: 50px !important; */
 }
 
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab {
@@ -136,4 +139,74 @@
     padding-left: 4px;
     position: relative;
     white-space: nowrap;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit .monaco-icon-label, .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.sizing-fit .monaco-icon-label>.monaco-icon-label-container {
+    overflow-x: visible;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab .tab-label a, .monaco-workbench .part.editor>.content .editor-group-container>.title .title-label a {
+    font-size: 12px;
+}
+
+.monaco-icon-label:before {
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    display: inline-block;
+    height: 10px;
+    line-height: inherit !important;
+    padding-right: 2px;
+    width: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    flex-shrink: 0;
+    vertical-align: top;
+}
+
+.monaco-icon-label::after {
+    margin-left: 8px;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab>.tab-actions .action-label.codicon {
+    color: inherit;
+    font-size: 14px;
+    height: 14px;
+    padding: 2px;
+    width: 14px;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container.active>.title .tabs-container>.tab.active {
+    color: var(--vscode-tab-focusedActiveForeground);
+    height: 32.4px !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active {
+    color: var(--vscode-tab-unfocusedActiveForeground);
+    height: 32.4px !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab>.tab-actions {
+    margin-bottom: auto;
+    margin-top: 8px !important;
+    width: 25px;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab>.tab-actions {
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 25px;
+}
+
+
+.show-file-icons .json-lang-file-icon.file-icon::before, .show-file-icons .jsonc-lang-file-icon.file-icon::before, .show-file-icons .json5-lang-file-icon.file-icon::before, .show-file-icons .json-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .jsonc-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .tsbuildinfo-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .json5-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .jsonl-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .ndjson-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .\.jscsrc-name-file-icon.name-file-icon.jscsrc-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .\.jshintrc-name-file-icon.name-file-icon.jshintrc-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .composer\.lock-name-file-icon.name-file-icon.lock-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .\.jsbeautifyrc-name-file-icon.name-file-icon.jsbeautifyrc-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .\.esformatter-name-file-icon.name-file-icon.esformatter-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .cdp\.pid-name-file-icon.name-file-icon.pid-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .\.lintstagedrc-name-file-icon.name-file-icon.lintstagedrc-ext-file-icon.ext-file-icon.file-icon::before, .show-file-icons .\.whitesource-name-file-icon.name-file-icon.whitesource-ext-file-icon.ext-file-icon.file-icon::before {
+    margin-top: auto;
+    margin-bottom: auto;
+    content: '\2001';
+    background-image: url(vscode-file://vscode-app/c:/Users/Admin/.vscode/extensions/pkief.material-icon-theme-5.11.1/icons/json.svg);
+}
+
+.monaco-icon-label {
+  display: flex;
+  align-items: center;
 }
