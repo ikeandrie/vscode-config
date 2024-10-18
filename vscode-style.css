@@ -1,6 +1,6 @@
 /* Code comment style */
 .mtk3 {
-    font-family: 'Monaspace Radon', monospace !important;
+    font-family: 'Cascadia Mono', monospace !important;
 }
 
 /* Side bar */
@@ -38,10 +38,9 @@
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row
 .monaco-icon-label .label-name {
-    /* font-family: 'Geist Mono', monospace !important; */
-    font-size: 14px !important;
-    /* letter-spacing: -0.6px; */
-    /* color: #FFF !important; */
+    font-family: 'Cascadia Mono', monospace !important;
+    font-size: 12.5px !important;
+    letter-spacing: -0.4px;
 }
 
 /* Sidebar title */
@@ -54,16 +53,17 @@
 }
 
 .composite.title h2 {
-    /* font-family: 'Geist Mono', monospace !important; */
+    font-family: 'Consolas', monospace !important;
     font-weight: bolder !important;
     font-size: 14px !important;
+    letter-spacing: -0.4px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .composite.title h2::before {
     display: inline-block;
-    margin-right: 2px;
+    margin-right: 1px;
     font-size: 1.1rem;
     content: '📁';
 }
@@ -85,7 +85,7 @@
 
 /* Search Label */
 .search-label {
-    /* font-family: 'Geist Mono', monospace !important; */
+    font-family: 'Cascadia Mono', monospace !important;
     font-size: 14px !important;
     color: rgba(255, 255, 255, 0.2) !important;
     display: block;
@@ -122,9 +122,7 @@
 
 /* Tabbar */
 .tabs {
-  font-size: 14px !important;
-  /* letter-spacing: -0.6px; */
-  /* font-family: 'Geist Mono', monospace !important; */
+  font-family: 'Cascadia Mono', monospace !important;
   margin: -10px 0px 14px 20px;
   /* height: 50px !important; */
 }
