@@ -1,0 +1,141 @@
+/* Code comment style */
+.mtk3 {
+    font-family: 'Monaspace Radon', monospace !important;
+}
+
+/* Side bar */
+.part.sidebar {
+    box-shadow: 20px 50px rgba(12, 12, 12, 0.25);
+}
+
+.codicon-toolbar-more, .codicon-word-wrap {
+    display: block !important;
+}
+
+/* Toolbars when tabs are enabled. */
+.monaco-workbench .part.editor>.content .editor-group-container>.title .editor-actions {
+    display: none !important;
+}
+
+/* File Explorer Selected Item */
+.monaco-list.list_id_1 .monaco-list-row.selected {
+    background-color: transparent !important;
+    opacity: 1 !important;
+}
+
+/* List item label name */
+.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
+    color: rgba(255, 255, 255, 0.7) !important;
+    opacity: 1 !important;
+}
+
+/* File explorer action buttons */
+.monaco-workbench .part.sidebar .title-actions .actions-container {
+    display: none;
+}
+
+/* File Explorer Item Label */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row
+.monaco-icon-label .label-name {
+    font-family: 'Geist Mono', monospace !important;
+    font-size: 14px !important;
+    letter-spacing: -0.6px;
+    /* color: #FFF !important; */
+}
+
+/* Sidebar title */
+.composite.title {
+    margin: 1.5px 0px 4px -4px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-items: center !important;
+}
+
+.composite.title h2 {
+    font-family: 'Geist Mono', monospace !important;
+    font-weight: bolder !important;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.composite.title h2::before {
+    display: inline-block;
+    margin-right: 2px;
+    font-size: 1.1rem;
+    content: '📁';
+}
+
+/* Sidebar items */
+.monaco-icon-label::after {
+  margin-left: 20px;
+}
+
+.monaco-icon-label-container {
+  flex: none !important;
+}
+
+/* Project title's style at the top. */
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Search Label */
+.search-label {
+    font-family: 'Geist Mono', monospace !important;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.2) !important;
+    display: block;
+}
+
+/* Search icon */
+.search-icon {
+    margin-right: 4px;
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* .codicon-search::before {
+    display: none !important;
+} */
+
+.codicon-arrow-right, .codicon-arrow-left {
+    display: none !important;
+}
+
+.titlebar-right > * {
+    display: none !important;
+}
+
+/* Seperator */
+.monaco-split-view2.separator-border>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before {
+    background-color: transparent !important;
+    content: " ";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+/* Tabbar */
+.tabs {
+  font-size: 14px !important;
+  letter-spacing: -0.6px;
+  font-family: 'Geist Mono', monospace !important;
+  margin: 1.5px 0px 14px 20px;
+  /* height: 50px !important; */
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab {
+    background-color: var(--vscode-tab-unfocusedInactiveBackground);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    height: var(--editor-group-tab-height);
+    padding-left: 4px;
+    position: relative;
+    white-space: nowrap;
+}
