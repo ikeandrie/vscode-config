@@ -38,15 +38,15 @@
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row
 .monaco-icon-label .label-name {
-    font-family: 'Geist Mono', monospace !important;
+    /* font-family: 'Geist Mono', monospace !important; */
     font-size: 14px !important;
-    letter-spacing: -0.6px;
+    /* letter-spacing: -0.6px; */
     /* color: #FFF !important; */
 }
 
 /* Sidebar title */
 .composite.title {
-    margin: 1.5px 0px 4px -4px;
+    margin: -10px 0px 4px 10px;
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
@@ -54,7 +54,7 @@
 }
 
 .composite.title h2 {
-    font-family: 'Geist Mono', monospace !important;
+    /* font-family: 'Geist Mono', monospace !important; */
     font-weight: bolder !important;
     font-size: 14px !important;
     text-transform: uppercase;
@@ -85,7 +85,7 @@
 
 /* Search Label */
 .search-label {
-    font-family: 'Geist Mono', monospace !important;
+    /* font-family: 'Geist Mono', monospace !important; */
     font-size: 14px !important;
     color: rgba(255, 255, 255, 0.2) !important;
     display: block;
@@ -123,9 +123,9 @@
 /* Tabbar */
 .tabs {
   font-size: 14px !important;
-  letter-spacing: -0.6px;
-  font-family: 'Geist Mono', monospace !important;
-  margin: 1.5px 0px 14px 20px;
+  /* letter-spacing: -0.6px; */
+  /* font-family: 'Geist Mono', monospace !important; */
+  margin: -10px 0px 14px 20px;
   /* height: 50px !important; */
 }
 
